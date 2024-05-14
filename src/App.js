@@ -84,6 +84,7 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import MoviesList from "./components/MoviesList";
 import "./App.css";
+import MovieInputForm from "./components/MovieInputForm";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -119,6 +120,9 @@ function App() {
 
   return (
     <React.Fragment>
+      <section>
+        <MovieInputForm />
+      </section>
       <section>
         {loading ? (
           <div className="loader">Loading...</div>
